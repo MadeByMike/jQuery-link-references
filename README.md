@@ -16,5 +16,15 @@ This plugin will generate an ordered list inside a target element.
 Example
 -------
 ```
-$('.print-only').linkReferences()
+default-options = {
+       containers : '*', // this is where this script looks for links
+       ignoreContainers : false, // the script will ignore links found in these containers
+       before : '<h2>Link references<\/h2>', // A title for the link references
+       listClass : 'link-refs', // A class added to the ol
+       supClass : 'link-ref', // Added to the numbered the references within the contnet
+       maxLinks : 1000 // this is the maximum amount of links to check - adjust to prevent timeouts in pages with lots of links
+}
+
+$('.print-only').linkReferences(scope,options); 
 ```
+
