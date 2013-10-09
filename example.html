@@ -1,0 +1,23 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Link references example</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="link-references.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.print-only').linkReferences();
+		});
+	</script>
+	<style media="screen">
+		.link-ref,
+		.print-only{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<p>Pellentesque <a href="http://example.com">habitant morbi</a> tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+	<div class="print-only"></div>
+</body>
+</html>
