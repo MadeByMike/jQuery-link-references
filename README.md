@@ -16,7 +16,7 @@ This plugin will generate an ordered list inside a target element.
 Example
 -------
 ```
-default-options = {
+options = {
        containers : '*', // this is where this script looks for links
        ignoreContainers : false, // the script will ignore links found in these containers
        before : '<h2>Link references<\/h2>', // A title for the link references
